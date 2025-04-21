@@ -1,11 +1,10 @@
-cat <<EOF > Jenkinsfile
 pipeline {
     agent any
 
     stages {
         stage('Clone Repo') {
             steps {
-                git url: 'https://github.com/YOUR_USERNAME/hello-docker-jenkins.git', branch: 'main'
+                git url: 'https://github.com/prabhathg19/hathprab.git', branch: 'main'
             }
         }
 
@@ -22,4 +21,3 @@ pipeline {
         }
     }
 }
-EOF
